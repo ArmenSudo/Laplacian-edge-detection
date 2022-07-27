@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def laplacian(a: np.ndarray, b: np.ndarray = np.array([[1, 1, 1], [1, -8, 1], [1, 1, 1]])):
+def laplacian(a: np.ndarray, b: np.ndarray = np.array([[1, 1, 1], [1, -8, 1], [1, 1, 1]]), s: int = 1):
     """Laplacian edge detection"""
     cols = (a.shape[0] - b.shape[0]) + 1
     rows = (a.shape[1] - b.shape[0]) + 1
