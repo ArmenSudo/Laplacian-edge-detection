@@ -15,7 +15,7 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 img = cv2.GaussianBlur(gray, (3, 3), 0)
 
 ddepth = cv2.CV_16S
-kernel_size = 1
+kernel_size = 3
 
 dst = cv2.Laplacian(img, ddepth, ksize=kernel_size)
 
